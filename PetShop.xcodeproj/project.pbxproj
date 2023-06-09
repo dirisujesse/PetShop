@@ -11,6 +11,10 @@
 		8EC43A232A33CD1D00724548 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC43A222A33CD1D00724548 /* ContentView.swift */; };
 		8EC43A252A33CD2000724548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC43A242A33CD2000724548 /* Assets.xcassets */; };
 		8EC43A282A33CD2000724548 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC43A272A33CD2000724548 /* Preview Assets.xcassets */; };
+		8EC43A3C2A33D5AB00724548 /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC43A3B2A33D5AB00724548 /* FontStyles.swift */; };
+		8EC43A3E2A33D5C700724548 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC43A3D2A33D5C700724548 /* AppColors.swift */; };
+		8EC43A422A33D63E00724548 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC43A402A33D63E00724548 /* ViewExtension.swift */; };
+		8EC43A452A33DBC800724548 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC43A442A33DBC800724548 /* AppImages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,16 @@
 		8EC43A222A33CD1D00724548 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8EC43A242A33CD2000724548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EC43A272A33CD2000724548 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8EC43A342A33D16400724548 /* Manrope-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraBold.otf"; sourceTree = "<group>"; };
+		8EC43A352A33D16400724548 /* Manrope-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.otf"; sourceTree = "<group>"; };
+		8EC43A362A33D16400724548 /* Manrope-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.otf"; sourceTree = "<group>"; };
+		8EC43A372A33D16400724548 /* Manrope-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.otf"; sourceTree = "<group>"; };
+		8EC43A382A33D16400724548 /* Manrope-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.otf"; sourceTree = "<group>"; };
+		8EC43A392A33D4F100724548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8EC43A3B2A33D5AB00724548 /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+		8EC43A3D2A33D5C700724548 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		8EC43A402A33D63E00724548 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		8EC43A442A33DBC800724548 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +65,14 @@
 		8EC43A1F2A33CD1D00724548 /* PetShop */ = {
 			isa = PBXGroup;
 			children = (
+				8EC43A392A33D4F100724548 /* Info.plist */,
+				8EC43A322A33D00A00724548 /* Assets */,
+				8EC43A312A33CFD900724548 /* Utilities */,
+				8EC43A302A33CFCB00724548 /* Views */,
+				8EC43A2F2A33CFBC00724548 /* ViewModels */,
+				8EC43A2E2A33CFB400724548 /* Models */,
 				8EC43A202A33CD1D00724548 /* PetShopApp.swift */,
 				8EC43A222A33CD1D00724548 /* ContentView.swift */,
-				8EC43A242A33CD2000724548 /* Assets.xcassets */,
 				8EC43A262A33CD2000724548 /* Preview Content */,
 			);
 			path = PetShop;
@@ -65,6 +84,75 @@
 				8EC43A272A33CD2000724548 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8EC43A2E2A33CFB400724548 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8EC43A2F2A33CFBC00724548 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8EC43A302A33CFCB00724548 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8EC43A312A33CFD900724548 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8EC43A3F2A33D63E00724548 /* Extensions */,
+				8EC43A3A2A33D59100724548 /* Constants */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8EC43A322A33D00A00724548 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8EC43A332A33D06100724548 /* Fonts */,
+				8EC43A242A33CD2000724548 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		8EC43A332A33D06100724548 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8EC43A372A33D16400724548 /* Manrope-Bold.otf */,
+				8EC43A342A33D16400724548 /* Manrope-ExtraBold.otf */,
+				8EC43A382A33D16400724548 /* Manrope-Medium.otf */,
+				8EC43A352A33D16400724548 /* Manrope-Regular.otf */,
+				8EC43A362A33D16400724548 /* Manrope-SemiBold.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		8EC43A3A2A33D59100724548 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8EC43A3B2A33D5AB00724548 /* FontStyles.swift */,
+				8EC43A3D2A33D5C700724548 /* AppColors.swift */,
+				8EC43A442A33DBC800724548 /* AppImages.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8EC43A3F2A33D63E00724548 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8EC43A402A33D63E00724548 /* ViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +226,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EC43A232A33CD1D00724548 /* ContentView.swift in Sources */,
+				8EC43A452A33DBC800724548 /* AppImages.swift in Sources */,
+				8EC43A3E2A33D5C700724548 /* AppColors.swift in Sources */,
 				8EC43A212A33CD1D00724548 /* PetShopApp.swift in Sources */,
+				8EC43A3C2A33D5AB00724548 /* FontStyles.swift in Sources */,
+				8EC43A422A33D63E00724548 /* ViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +362,7 @@
 				DEVELOPMENT_TEAM = 76T37C7ZY5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PetShop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +392,7 @@
 				DEVELOPMENT_TEAM = 76T37C7ZY5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PetShop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
