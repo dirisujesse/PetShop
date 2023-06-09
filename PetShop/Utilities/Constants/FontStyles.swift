@@ -9,73 +9,46 @@ import SwiftUI
 
 struct AppFonts {
     private init() {}
-    
-    static let boldFont = "Inter-Bold"
-    static let semiBoldFont = "Inter-SemiBold"
-    static let mediumFont = "Inter-Medium"
-    static let regularFont = "Inter-Regular"
+
+    static let extraBold = "Manrope-ExtraBold"
+    static let bold = "Manrope-Bold"
+    static let semiBold = "Manrope-SemiBold"
+    static let medium = "Manrope-Medium"
+    static let regular = "Manrope-Regular"
 }
 
-struct BoldFontStyle: ViewModifier {
+private protocol AppFontStyle {
+    var size: CGFloat { get }
+
+    func getStyle() -> Font
+}
+
+private struct ExtraBoldFontStyle: AppFontStyle {
     let size: CGFloat
-    let color: Color
-    
-    func body(content: Content) -> some View {
-        content
-            .font(.custom(AppFonts.boldFont, size: size))
-            .foregroundColor(color)
+
+    func getStyle() -> Font {
+        .custom(AppFonts.extraBold, size: size)
     }
 }
 
-struct SemiBoldFontStyle: ViewModifier {
-    let size: CGFloat
-    let color: Color
-    
-    func body(content: Content) -> some View {
-        content
-            .font(.custom(AppFonts.semiBoldFont, size: size))
-            .foregroundColor(color)
+extension Font {
+    static func manropeRegular(_ size: CGFloat = 12) -> Font {
+        .custom(AppFonts.regular, size: size)
+    }
+
+    static func manropeMedium(_ size: CGFloat = 12) -> Font {
+        .custom(AppFonts.medium, size: size)
+    }
+
+    static func manropeSemiBold(_ size: CGFloat = 12) -> Font {
+        .custom(AppFonts.semiBold, size: size)
+    }
+
+    static func manropeBold(_ size: CGFloat = 12) -> Font {
+        .custom(AppFonts.bold, size: size)
+    }
+
+    static func manropeExtraBold(_ size: CGFloat = 12) -> Font {
+        .custom(AppFonts.extraBold, size: size)
     }
 }
-
-struct MediumFontStyle: ViewModifier {
-    let size: CGFloat
-    let color: Color
-    
-    func body(content: Content) -> some View {
-        content
-            .font(.custom(AppFonts.mediumFont, size: size))
-            .foregroundColor(color)
-    }
-}
-
-struct RegularFontStyle: ViewModifier {
-    let size: CGFloat
-    let color: Color
-    
-    func body(content: Content) -> some View {
-        content
-            .font(.custom(AppFonts.regularFont, size: size))
-            .foregroundColor(color)
-    }
-}
-
-
-extension View {
-    func regularFont(size: CGFloat, color: Color = .text) -> some View {
-        self.modifier(RegularFontStyle(size: size, color: color))
-    }
-    
-    func semiBoldFont(size: CGFloat, color: Color = .text) -> some View {
-        self.modifier(SemiBoldFontStyle(size: size, color: color))
-    }
-    
-    func mediumFont(size: CGFloat, color: Color = .text) -> some View {
-        self.modifier(MediumFontStyle(size: size, color: color))
-    }
-    
-    func boldFont(size: CGFloat, color: Color = .text) -> some View {
-        self.modifier(BoldFontStyle(size: size, color: color))
-    }
-}
-
