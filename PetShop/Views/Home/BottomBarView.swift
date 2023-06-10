@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct BottomBarView: View {
-    @Binding var activeIndex: Int;
-    
+    var activeIndex: Int
+    var onTabSelection: (Int) -> Void
+
+    init(activeIndex: Int, onTabSelection: @escaping (Int) -> Void = { _ in }) {
+        self.activeIndex = activeIndex
+        self.onTabSelection = onTabSelection
+    }
+
     var body: some View {
         HStack {
-            BottomBarItemView(activeIndex: $activeIndex, index: 0, icon: .homeIconImage)
+            BottomBarItemView(activeIndex: activeIndex, index: 0, icon: .homeIconImage, onTabSelection: onTabSelection)
             Spacer()
-            BottomBarItemView(activeIndex: $activeIndex, index: 1, icon: .heartIconImage)
+            BottomBarItemView(activeIndex: activeIndex, index: 1, icon: .heartIconImage, onTabSelection: onTabSelection)
             Spacer()
-            BottomBarItemView(activeIndex: $activeIndex, index: 2, icon: .messageIconImage)
+            BottomBarItemView(activeIndex: activeIndex, index: 2, icon: .messageIconImage, onTabSelection: onTabSelection)
             Spacer()
-            BottomBarItemView(activeIndex: $activeIndex, index: 3, icon: .userIconImage)
+            BottomBarItemView(activeIndex: activeIndex, index: 3, icon: .userIconImage, onTabSelection: onTabSelection)
         }
         .padding(.horizontal, 45)
         .padding(.vertical, 29)
@@ -31,7 +37,7 @@ struct BottomBarView: View {
 
 struct BottomBarView_Previews: PreviewProvider {
     static var previews: some View {
-        BottomBarView(activeIndex: .constant(0))
+        BottomBarView(activeIndex: 0)
             .purpleBackground()
     }
 }

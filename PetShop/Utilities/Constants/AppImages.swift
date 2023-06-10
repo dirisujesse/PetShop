@@ -54,6 +54,10 @@ extension String {
         AppImages.dogIcon
     }
 
+    static var catIconImage: String {
+        AppImages.catIcon
+    }
+
     static var kittyImage: String {
         AppImages.kitty
     }

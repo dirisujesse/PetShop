@@ -11,6 +11,18 @@ enum AnimalSpecialisation {
     case all
     case dogs
     case cats
+    
+    var icons: [String] {
+        let icons: [String] = [.catIconImage, .dogIconImage]
+        switch self {
+        case .all:
+            return icons
+        case .dogs:
+            return [icons.last!]
+        case .cats:
+            return [icons.first!]
+        }
+    }
 }
 
 enum AnimalService: CaseIterable {
@@ -33,7 +45,8 @@ enum AnimalService: CaseIterable {
     }
 }
 
-struct Vetinarian {
+struct Vetinarian: Identifiable {
+    var id: UUID = UUID()
     let name: String
     let services: [AnimalService]
     let distance: String

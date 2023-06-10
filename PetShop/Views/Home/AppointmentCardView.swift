@@ -8,10 +8,41 @@
 import SwiftUI
 
 struct AppointmentCardView: View {
+    var formattedText: AttributedString {
+        var richText = AttributedString();
+
+        var leadText = AttributedString("Your ")
+        leadText.font = .manropeRegular()
+        leadText.foregroundColor = .white
+
+        richText += leadText
+
+        var boldText = AttributedString("Catrine")
+        boldText.font = .manropeExtraBold()
+        boldText.foregroundColor = .white
+
+        richText += boldText
+
+
+        var trailingText = AttributedString(" will get vaccination ")
+        trailingText.font = .manropeRegular()
+        trailingText.foregroundColor = .white
+
+        richText += trailingText
+        
+        var terminalBoldText = AttributedString("tomorrow at 07.00 am!")
+        terminalBoldText.font = .manropeExtraBold()
+        terminalBoldText.foregroundColor = .white
+
+        richText += terminalBoldText
+
+        return richText
+    }
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text("Your Catrine will get vaccination tomorrow at 07.00 am!")
+                Text(formattedText)
                     .font(.manropeRegular())
                     .foregroundColor(.white)
                     .padding(.bottom, 20)
@@ -25,7 +56,7 @@ struct AppointmentCardView: View {
                 .resizable()
         }
         .frame(maxWidth: .infinity)
-        .cardBackground()
+        .cardBackground(animate: false)
         .clipShape(RoundedRectangle(cornerRadius: 14))
     }
 }

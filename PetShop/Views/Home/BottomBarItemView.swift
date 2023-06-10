@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct BottomBarItemView: View {
-    @Binding var activeIndex: Int
+    var activeIndex: Int
     let index: Int
     let icon: String
+    var onTabSelection: (Int) -> Void
+
+    init(activeIndex: Int, index: Int, icon: String, onTabSelection: @escaping (Int) -> Void) {
+        self.activeIndex = activeIndex
+        self.index = index
+        self.icon = icon
+        self.onTabSelection = onTabSelection
+    }
 
     private var isActive: Bool {
         activeIndex == index
@@ -34,15 +42,13 @@ struct BottomBarItemView: View {
         }
         .scaleEffect(isActive ? 1.05 : 1)
         .onTapGesture {
-            withAnimation(.easeIn(duration: 0.5)) {
-                activeIndex = index
-            }
+            onTabSelection(index)
         }
     }
 }
 
 struct BottomBarItemView_Previews: PreviewProvider {
     static var previews: some View {
-        BottomBarItemView(activeIndex: .constant(0), index: 0, icon: .homeIconImage)
+        BottomBarItemView(activeIndex: 0, index: 0, icon: .homeIconImage) { _ in }
     }
 }
