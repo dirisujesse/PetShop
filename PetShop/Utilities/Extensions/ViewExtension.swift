@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct BackgroudModifier: ViewModifier {
+    let animate: Bool;
+    
     func body(content: Content) -> some View {
         ZStack {
-            BackgroundView()
+            BackgroundView(animate: animate)
             content
         }
     }
@@ -81,8 +83,8 @@ extension CGFloat {
 }
 
 extension View {
-    func purpleBackground() -> some View {
-        modifier(BackgroudModifier())
+    func purpleBackground(animate: Bool = true) -> some View {
+        modifier(BackgroudModifier(animate: animate))
     }
 
     private var bounds: CGRect {

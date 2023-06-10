@@ -8,6 +8,25 @@
 import SwiftUI
 
 struct BackgroundView: View {
+    let animate: Bool;
+    @State private var animationFraction: CGFloat = 1;
+    
+    init(animate: Bool = true) {
+        self.animate = animate
+        guard animate else {return}
+        _animationFraction = State(initialValue: 0)
+    }
+    
+    func incrementAnimationFraction() {
+        guard animate else {return}
+        
+        while (animationFraction < 1) {
+            withAnimation(.easeIn(duration: 3)) {
+                animationFraction += 0.01
+            }
+        }
+    }
+    
     var body: some View {
         ZStack {
             Color.appPurple
@@ -16,22 +35,23 @@ struct BackgroundView: View {
                 ZStack(alignment: .top) {
                     BacgroundCircleView()
                         .scaleEffect(2)
-                        .offset(x: -proxy.widthFraction(83), y: -proxy.heightFraction(35))
+                        .offset(x: -proxy.widthFraction(83) * animationFraction, y: -proxy.heightFraction(35) * animationFraction)
                     BacgroundCircleView(opacity: 0.2)
-                        .offset(x: proxy.widthFraction(45), y: proxy.heightFraction(40))
+                        .offset(x: proxy.widthFraction(45) * animationFraction, y: proxy.heightFraction(40) * animationFraction)
                     
                     BorderedCircle()
-                        .offset(x: proxy.widthFraction(35), y: proxy.heightFraction(50))
+                        .offset(x: proxy.widthFraction(35) * animationFraction, y: proxy.heightFraction(50) * animationFraction)
                     BorderedCircle()
-                        .offset(x: -proxy.widthFraction(36), y: proxy.heightFraction(74))
+                        .offset(x: -proxy.widthFraction(36) * animationFraction, y: proxy.heightFraction(74) * animationFraction)
                     
                     WhiteCircleView()
-                        .offset(x: proxy.widthFraction(38), y: proxy.heightFraction(66.5))
+                        .offset(x: proxy.widthFraction(38) * animationFraction, y: proxy.heightFraction(66.5) * animationFraction)
                     WhiteCircleView(12)
-                        .offset(x: -proxy.widthFraction(35), y: proxy.heightFraction(67.5))
+                        .offset(x: -proxy.widthFraction(35) * animationFraction, y: proxy.heightFraction(67.5) * animationFraction)
                 }
             }
         }
+        .onAppear(perform: incrementAnimationFraction)
     }
 }
 

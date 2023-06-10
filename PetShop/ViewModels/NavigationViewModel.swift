@@ -39,10 +39,7 @@ class NavigationViewModel: ObservableObject {
         case .welcome:
             WelcomeScreenView()
         case .home:
-            Text("Home Screen")
-                .onTapGesture {
-                    self.pop()
-                }
+            HomeScreenView()
         }
     }
 }
