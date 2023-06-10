@@ -15,6 +15,17 @@
 		8EC43A3E2A33D5C700724548 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC43A3D2A33D5C700724548 /* AppColors.swift */; };
 		8EC43A422A33D63E00724548 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC43A402A33D63E00724548 /* ViewExtension.swift */; };
 		8EC43A452A33DBC800724548 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC43A442A33DBC800724548 /* AppImages.swift */; };
+		8EC4CB152A33F85700E0A06F /* Manrope-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EC43A342A33D16400724548 /* Manrope-ExtraBold.otf */; };
+		8EC4CB162A33F87900E0A06F /* Manrope-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EC43A362A33D16400724548 /* Manrope-SemiBold.otf */; };
+		8EC4CB172A33F87E00E0A06F /* Manrope-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EC43A352A33D16400724548 /* Manrope-Regular.otf */; };
+		8EC4CB182A33F88100E0A06F /* Manrope-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EC43A382A33D16400724548 /* Manrope-Medium.otf */; };
+		8EC4CB192A33F88400E0A06F /* Manrope-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EC43A372A33D16400724548 /* Manrope-Bold.otf */; };
+		8EC4CB1C2A3401B800E0A06F /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC4CB1B2A3401B800E0A06F /* BackgroundView.swift */; };
+		8EC4CB1E2A34034E00E0A06F /* BacgroundCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC4CB1D2A34034E00E0A06F /* BacgroundCircleView.swift */; };
+		8ECC71CE2A348F7B0072BA7E /* BorderedCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71CD2A348F7B0072BA7E /* BorderedCircle.swift */; };
+		8ECC71D02A3493250072BA7E /* WhiteCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71CF2A3493250072BA7E /* WhiteCircleView.swift */; };
+		8ECC71D32A349D000072BA7E /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71D22A349D000072BA7E /* WelcomeScreenView.swift */; };
+		8ECC71D52A349DD10072BA7E /* NavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71D42A349DD10072BA7E /* NavigationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +44,12 @@
 		8EC43A3D2A33D5C700724548 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		8EC43A402A33D63E00724548 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		8EC43A442A33DBC800724548 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
+		8EC4CB1B2A3401B800E0A06F /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		8EC4CB1D2A34034E00E0A06F /* BacgroundCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacgroundCircleView.swift; sourceTree = "<group>"; };
+		8ECC71CD2A348F7B0072BA7E /* BorderedCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedCircle.swift; sourceTree = "<group>"; };
+		8ECC71CF2A3493250072BA7E /* WhiteCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteCircleView.swift; sourceTree = "<group>"; };
+		8ECC71D22A349D000072BA7E /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
+		8ECC71D42A349DD10072BA7E /* NavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +113,7 @@
 		8EC43A2F2A33CFBC00724548 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8ECC71D42A349DD10072BA7E /* NavigationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -103,6 +121,8 @@
 		8EC43A302A33CFCB00724548 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8ECC71D12A349CE90072BA7E /* Welcome */,
+				8EC4CB1A2A34017200E0A06F /* Shared */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,22 +139,10 @@
 		8EC43A322A33D00A00724548 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				8EC43A332A33D06100724548 /* Fonts */,
+				8EC4CB132A33F7EF00E0A06F /* Fonts */,
 				8EC43A242A33CD2000724548 /* Assets.xcassets */,
 			);
 			name = Assets;
-			sourceTree = "<group>";
-		};
-		8EC43A332A33D06100724548 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				8EC43A372A33D16400724548 /* Manrope-Bold.otf */,
-				8EC43A342A33D16400724548 /* Manrope-ExtraBold.otf */,
-				8EC43A382A33D16400724548 /* Manrope-Medium.otf */,
-				8EC43A352A33D16400724548 /* Manrope-Regular.otf */,
-				8EC43A362A33D16400724548 /* Manrope-SemiBold.otf */,
-			);
-			name = Fonts;
 			sourceTree = "<group>";
 		};
 		8EC43A3A2A33D59100724548 /* Constants */ = {
@@ -153,6 +161,37 @@
 				8EC43A402A33D63E00724548 /* ViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8EC4CB132A33F7EF00E0A06F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8EC43A362A33D16400724548 /* Manrope-SemiBold.otf */,
+				8EC43A342A33D16400724548 /* Manrope-ExtraBold.otf */,
+				8EC43A352A33D16400724548 /* Manrope-Regular.otf */,
+				8EC43A382A33D16400724548 /* Manrope-Medium.otf */,
+				8EC43A372A33D16400724548 /* Manrope-Bold.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		8EC4CB1A2A34017200E0A06F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8EC4CB1B2A3401B800E0A06F /* BackgroundView.swift */,
+				8EC4CB1D2A34034E00E0A06F /* BacgroundCircleView.swift */,
+				8ECC71CD2A348F7B0072BA7E /* BorderedCircle.swift */,
+				8ECC71CF2A3493250072BA7E /* WhiteCircleView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8ECC71D12A349CE90072BA7E /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				8ECC71D22A349D000072BA7E /* WelcomeScreenView.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,8 +252,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC4CB152A33F85700E0A06F /* Manrope-ExtraBold.otf in Resources */,
+				8EC4CB172A33F87E00E0A06F /* Manrope-Regular.otf in Resources */,
+				8EC4CB162A33F87900E0A06F /* Manrope-SemiBold.otf in Resources */,
 				8EC43A282A33CD2000724548 /* Preview Assets.xcassets in Resources */,
 				8EC43A252A33CD2000724548 /* Assets.xcassets in Resources */,
+				8EC4CB182A33F88100E0A06F /* Manrope-Medium.otf in Resources */,
+				8EC4CB192A33F88400E0A06F /* Manrope-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,12 +269,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ECC71D52A349DD10072BA7E /* NavigationViewModel.swift in Sources */,
 				8EC43A232A33CD1D00724548 /* ContentView.swift in Sources */,
 				8EC43A452A33DBC800724548 /* AppImages.swift in Sources */,
+				8ECC71CE2A348F7B0072BA7E /* BorderedCircle.swift in Sources */,
+				8ECC71D32A349D000072BA7E /* WelcomeScreenView.swift in Sources */,
 				8EC43A3E2A33D5C700724548 /* AppColors.swift in Sources */,
+				8EC4CB1C2A3401B800E0A06F /* BackgroundView.swift in Sources */,
 				8EC43A212A33CD1D00724548 /* PetShopApp.swift in Sources */,
 				8EC43A3C2A33D5AB00724548 /* FontStyles.swift in Sources */,
+				8EC4CB1E2A34034E00E0A06F /* BacgroundCircleView.swift in Sources */,
 				8EC43A422A33D63E00724548 /* ViewExtension.swift in Sources */,
+				8ECC71D02A3493250072BA7E /* WhiteCircleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

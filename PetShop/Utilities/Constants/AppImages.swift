@@ -11,6 +11,10 @@ struct AppImages {
     private init() {}
     
     static let berner = "berner"
+    static let homeIcon = "home"
+    static let heartIcon = "heart"
+    static let messageIcon = "message"
+    static let userIcon = "user"
     static let catIcon = "cat_icon"
     static let dogIcon = "dog_icon"
     static let locationPin = "map_pin"
@@ -27,8 +31,21 @@ extension String {
         AppImages.berner
     }
     
-    static var catIconImage: String {
-        AppImages.catIcon
+    static var homeIconImage: String {
+        AppImages.homeIcon
+    }
+    
+    
+    static var heartIconImage: String {
+        AppImages.heartIcon
+    }
+    
+    static var messageIconImage: String {
+        AppImages.messageIcon
+    }
+    
+    static var userIconImage: String {
+        AppImages.userIcon
     }
     
     static var dogIconImage: String {

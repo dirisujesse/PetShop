@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct PetShopApp: App {
+    @StateObject var navigationVM = NavigationViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.light)
+                .environmentObject(navigationVM)
         }
     }
 }

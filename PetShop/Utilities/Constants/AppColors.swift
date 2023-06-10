@@ -12,7 +12,7 @@ struct AppColors {
 
     static let purple = Color("Purple")
     static let lightPurple = Color("LightPurple")
-    static let purpleText = Color("PurpleText")
+    static let textPurple = Color("TextPurple")
     static let pink = Color("Pink")
     static let magenta = Color("Magenta")
     static let teal = Color("Teal")
@@ -20,6 +20,8 @@ struct AppColors {
     static let text = Color("Text")
     static let secondaryText = Color("SecondaryText")
     static let disabledText = Color("DisabledText")
+    static let aquaMarine = Color("AquaMarine")
+    static let skyBlue = Color("SkyBlue")
     static let transparent = Color("Transparent")
 }
 
@@ -28,8 +30,8 @@ extension ShapeStyle where Self == Color {
         AppColors.purple
     }
 
-    static var appPurpleText: Color {
-        AppColors.purpleText
+    static var appTextPurple: Color {
+        AppColors.textPurple
     }
 
     static var appLightPurple: Color {
@@ -62,6 +64,15 @@ extension ShapeStyle where Self == Color {
 
     static var appTeal: Color {
         AppColors.teal
+    }
+    
+    static var appSkyBlue: Color {
+        AppColors.skyBlue
+    }
+
+    
+    static var appAquaMarine: Color {
+        AppColors.aquaMarine
     }
 
     static var transparent: Color {
