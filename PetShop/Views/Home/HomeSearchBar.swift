@@ -10,23 +10,26 @@ import SwiftUI
 struct HomeSearchBar: View {
     @ObservedObject var vm: HomeViewModel
     @State var text = ""
-    
+
     var body: some View {
         HStack {
             Image(.searchIconImage)
                 .onTapGesture {
                     vm.searchVets(text)
                 }
-            TextField("Find best vaccinate, treatment...", text: $text) {
-                vm.searchVets(text)
-            }
-            .font(.manropeBold(12))
+                .padding(.horizontal)
+            TextField("Find best vaccinate, treatment...", text: $text)
+                .padding(.vertical)
+                .padding(.trailing)
+                .textInputAutocapitalization(.none)
+                .onChange(of: text, perform: vm.searchVets)
+                .font(.manropeBold(12))
         }
-        .padding()
         .background(
             RoundedRectangle(cornerRadius: 14)
                 .fill(.appGreyBg)
         )
+        
         .frame(maxWidth: .infinity)
     }
 }

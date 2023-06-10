@@ -33,7 +33,7 @@ struct BottomBarItemView: View {
     }
 
     var body: some View {
-        VStack(spacing: 1) {
+        VStack(spacing: 3) {
             Image(icon)
                 .renderingMode(.template)
                 .foregroundColor(color)

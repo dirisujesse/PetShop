@@ -25,7 +25,7 @@ struct BorderedButton: View {
     var body: some View {
         Button(action: action) {
             Text(text)
-                .font(.manropeRegular(12))
+                .font(.manropeBold(12))
                 .frame(minHeight: 36)
                 .foregroundColor(textColor)
                 .padding(.horizontal)

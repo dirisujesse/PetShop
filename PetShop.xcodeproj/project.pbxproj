@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E56E6A42A350E9800F9B15D /* HomeVetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E56E6A32A350E9800F9B15D /* HomeVetCard.swift */; };
+		8E56E6A62A35299000F9B15D /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E56E6A52A35299000F9B15D /* HomeTab.swift */; };
+		8E56E6A82A352A3800F9B15D /* FavTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E56E6A72A352A3800F9B15D /* FavTab.swift */; };
 		8EC43A212A33CD1D00724548 /* PetShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC43A202A33CD1D00724548 /* PetShopApp.swift */; };
 		8EC43A232A33CD1D00724548 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC43A222A33CD1D00724548 /* ContentView.swift */; };
 		8EC43A252A33CD2000724548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC43A242A33CD2000724548 /* Assets.xcassets */; };
@@ -38,9 +41,13 @@
 		8ECC71EB2A34E33A0072BA7E /* HomeSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71EA2A34E33A0072BA7E /* HomeSearchBar.swift */; };
 		8ECC71ED2A34F2690072BA7E /* ServiceSelectionIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71EC2A34F2690072BA7E /* ServiceSelectionIndicator.swift */; };
 		8ECC71EF2A34F2E80072BA7E /* ServiceSelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71EE2A34F2E80072BA7E /* ServiceSelectionRow.swift */; };
+		8ECC71F12A34FF700072BA7E /* VetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71F02A34FF700072BA7E /* VetListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E56E6A32A350E9800F9B15D /* HomeVetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVetCard.swift; sourceTree = "<group>"; };
+		8E56E6A52A35299000F9B15D /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
+		8E56E6A72A352A3800F9B15D /* FavTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTab.swift; sourceTree = "<group>"; };
 		8EC43A1D2A33CD1D00724548 /* PetShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC43A202A33CD1D00724548 /* PetShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetShopApp.swift; sourceTree = "<group>"; };
 		8EC43A222A33CD1D00724548 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +81,7 @@
 		8ECC71EA2A34E33A0072BA7E /* HomeSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchBar.swift; sourceTree = "<group>"; };
 		8ECC71EC2A34F2690072BA7E /* ServiceSelectionIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSelectionIndicator.swift; sourceTree = "<group>"; };
 		8ECC71EE2A34F2E80072BA7E /* ServiceSelectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSelectionRow.swift; sourceTree = "<group>"; };
+		8ECC71F02A34FF700072BA7E /* VetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +242,10 @@
 				8ECC71EA2A34E33A0072BA7E /* HomeSearchBar.swift */,
 				8ECC71EC2A34F2690072BA7E /* ServiceSelectionIndicator.swift */,
 				8ECC71EE2A34F2E80072BA7E /* ServiceSelectionRow.swift */,
+				8ECC71F02A34FF700072BA7E /* VetListView.swift */,
+				8E56E6A32A350E9800F9B15D /* HomeVetCard.swift */,
+				8E56E6A52A35299000F9B15D /* HomeTab.swift */,
+				8E56E6A72A352A3800F9B15D /* FavTab.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -327,13 +339,16 @@
 				8ECC71CE2A348F7B0072BA7E /* BorderedCircle.swift in Sources */,
 				8ECC71E72A34D5850072BA7E /* Vetinarian.swift in Sources */,
 				8ECC71D32A349D000072BA7E /* WelcomeScreenView.swift in Sources */,
+				8E56E6A62A35299000F9B15D /* HomeTab.swift in Sources */,
 				8ECC71DA2A34B90B0072BA7E /* BottomBarView.swift in Sources */,
 				8ECC71ED2A34F2690072BA7E /* ServiceSelectionIndicator.swift in Sources */,
 				8ECC71E32A34CA480072BA7E /* HomeExtensions.swift in Sources */,
 				8ECC71E52A34D3640072BA7E /* BorderedButton.swift in Sources */,
 				8EC43A3E2A33D5C700724548 /* AppColors.swift in Sources */,
+				8ECC71F12A34FF700072BA7E /* VetListView.swift in Sources */,
 				8EC4CB1C2A3401B800E0A06F /* BackgroundView.swift in Sources */,
 				8EC43A212A33CD1D00724548 /* PetShopApp.swift in Sources */,
+				8E56E6A42A350E9800F9B15D /* HomeVetCard.swift in Sources */,
 				8ECC71EB2A34E33A0072BA7E /* HomeSearchBar.swift in Sources */,
 				8ECC71DE2A34C7000072BA7E /* AppointmentCardView.swift in Sources */,
 				8EC43A3C2A33D5AB00724548 /* FontStyles.swift in Sources */,
@@ -341,6 +356,7 @@
 				8ECC71E02A34C9140072BA7E /* AppointmentCardBackgroundView.swift in Sources */,
 				8ECC71E92A34D8200072BA7E /* HomeViewModel.swift in Sources */,
 				8ECC71EF2A34F2E80072BA7E /* ServiceSelectionRow.swift in Sources */,
+				8E56E6A82A352A3800F9B15D /* FavTab.swift in Sources */,
 				8ECC71D82A34AF4D0072BA7E /* HomeScreenView.swift in Sources */,
 				8EC43A422A33D63E00724548 /* ViewExtension.swift in Sources */,
 				8ECC71D02A3493250072BA7E /* WhiteCircleView.swift in Sources */,
@@ -473,7 +489,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PetShop/Preview Content\"";
-				DEVELOPMENT_TEAM = 76T37C7ZY5;
+				DEVELOPMENT_TEAM = 6VCP4XBUMM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PetShop/Info.plist;
@@ -503,7 +519,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PetShop/Preview Content\"";
-				DEVELOPMENT_TEAM = 76T37C7ZY5;
+				DEVELOPMENT_TEAM = 6VCP4XBUMM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PetShop/Info.plist;

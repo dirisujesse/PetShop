@@ -26,14 +26,14 @@ enum AnimalSpecialisation {
 }
 
 enum AnimalService: CaseIterable {
-    case vacination
+    case vaccination
     case surgery
     case spa
     case consultation
 
     var name: String {
         switch self {
-        case .vacination:
+        case .vaccination:
             return "Vaccine"
         case .surgery:
             return "Surgery"

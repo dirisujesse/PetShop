@@ -31,7 +31,7 @@ struct ServiceSelectionIndicator: View {
     }
 
     var textColor: Color {
-        return isActive ? .white : .appDisabledText
+        return isActive ? .white : .appSecondaryText
     }
 
     var body: some View {
@@ -41,6 +41,6 @@ struct ServiceSelectionIndicator: View {
 
 struct ServiceSelectionIndicator_Previews: PreviewProvider {
     static var previews: some View {
-        ServiceSelectionIndicator(AnimalService.consultation, AnimalService.consultation) {}
+        ServiceSelectionIndicator(AnimalService.consultation, AnimalService.spa) {}
     }
 }
