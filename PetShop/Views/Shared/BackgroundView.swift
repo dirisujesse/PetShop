@@ -21,7 +21,7 @@ struct BackgroundView: View {
         guard animate else {return}
         
         while (animationFraction < 1) {
-            withAnimation(.easeIn(duration: 3)) {
+            withAnimation(.spring(response: 2, dampingFraction: 2, blendDuration: 2)) {
                 animationFraction += 0.01
             }
         }

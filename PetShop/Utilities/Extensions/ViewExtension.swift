@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BackgroudModifier: ViewModifier {
+struct BackgroundModifier: ViewModifier {
     let animate: Bool;
     
     func body(content: Content) -> some View {
@@ -66,6 +66,16 @@ extension GeometryProxy {
     func globalWidhtFraction(_ percentage: CGFloat) -> CGFloat {
         globalWidth.fraction(percentage)
     }
+    
+    
+    func localHeightFraction(_ percentage: CGFloat) -> CGFloat {
+        localHeight.fraction(percentage)
+    }
+
+    func localWidhtFraction(_ percentage: CGFloat) -> CGFloat {
+        localWidth.fraction(percentage)
+    }
+
 
     func refHeightFraction(_ refFrame: AnyHashable, _ percentage: CGFloat) -> CGFloat {
         refHeight(refFrame).fraction(percentage)
@@ -84,7 +94,7 @@ extension CGFloat {
 
 extension View {
     func purpleBackground(animate: Bool = true) -> some View {
-        modifier(BackgroudModifier(animate: animate))
+        modifier(BackgroundModifier(animate: animate))
     }
 
     private var bounds: CGRect {

@@ -32,23 +32,23 @@ private struct ExtraBoldFontStyle: AppFontStyle {
 }
 
 extension Font {
-    static func manropeRegular(_ size: CGFloat = 12) -> Font {
+    static func manropeRegular(_ size: CGFloat = 14) -> Font {
         .custom(AppFonts.regular, size: size)
     }
 
-    static func manropeMedium(_ size: CGFloat = 12) -> Font {
+    static func manropeMedium(_ size: CGFloat = 14) -> Font {
         .custom(AppFonts.medium, size: size)
     }
 
-    static func manropeSemiBold(_ size: CGFloat = 12) -> Font {
+    static func manropeSemiBold(_ size: CGFloat = 14) -> Font {
         .custom(AppFonts.semiBold, size: size)
     }
 
-    static func manropeBold(_ size: CGFloat = 12) -> Font {
+    static func manropeBold(_ size: CGFloat = 14) -> Font {
         .custom(AppFonts.bold, size: size)
     }
 
-    static func manropeExtraBold(_ size: CGFloat = 12) -> Font {
+    static func manropeExtraBold(_ size: CGFloat = 14) -> Font {
         .custom(AppFonts.extraBold, size: size)
     }
 }

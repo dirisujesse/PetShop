@@ -29,6 +29,12 @@
 		8ECC71D82A34AF4D0072BA7E /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71D72A34AF4D0072BA7E /* HomeScreenView.swift */; };
 		8ECC71DA2A34B90B0072BA7E /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71D92A34B90B0072BA7E /* BottomBarView.swift */; };
 		8ECC71DC2A34B9850072BA7E /* BottomBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71DB2A34B9850072BA7E /* BottomBarItemView.swift */; };
+		8ECC71DE2A34C7000072BA7E /* AppointmentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71DD2A34C7000072BA7E /* AppointmentCardView.swift */; };
+		8ECC71E02A34C9140072BA7E /* AppointmentCardBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71DF2A34C9140072BA7E /* AppointmentCardBackgroundView.swift */; };
+		8ECC71E32A34CA480072BA7E /* HomeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71E22A34CA480072BA7E /* HomeExtensions.swift */; };
+		8ECC71E52A34D3640072BA7E /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71E42A34D3640072BA7E /* BorderedButton.swift */; };
+		8ECC71E72A34D5850072BA7E /* Vetinarian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71E62A34D5850072BA7E /* Vetinarian.swift */; };
+		8ECC71E92A34D8200072BA7E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC71E82A34D81F0072BA7E /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +62,12 @@
 		8ECC71D72A34AF4D0072BA7E /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		8ECC71D92A34B90B0072BA7E /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
 		8ECC71DB2A34B9850072BA7E /* BottomBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarItemView.swift; sourceTree = "<group>"; };
+		8ECC71DD2A34C7000072BA7E /* AppointmentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentCardView.swift; sourceTree = "<group>"; };
+		8ECC71DF2A34C9140072BA7E /* AppointmentCardBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentCardBackgroundView.swift; sourceTree = "<group>"; };
+		8ECC71E22A34CA480072BA7E /* HomeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeExtensions.swift; sourceTree = "<group>"; };
+		8ECC71E42A34D3640072BA7E /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		8ECC71E62A34D5850072BA7E /* Vetinarian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vetinarian.swift; sourceTree = "<group>"; };
+		8ECC71E82A34D81F0072BA7E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,7 @@
 		8EC43A2E2A33CFB400724548 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8ECC71E62A34D5850072BA7E /* Vetinarian.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				8ECC71D42A349DD10072BA7E /* NavigationViewModel.swift */,
+				8ECC71E82A34D81F0072BA7E /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -189,6 +203,7 @@
 				8EC4CB1D2A34034E00E0A06F /* BacgroundCircleView.swift */,
 				8ECC71CD2A348F7B0072BA7E /* BorderedCircle.swift */,
 				8ECC71CF2A3493250072BA7E /* WhiteCircleView.swift */,
+				8ECC71E42A34D3640072BA7E /* BorderedButton.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -204,11 +219,22 @@
 		8ECC71D62A34AF390072BA7E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8ECC71E12A34CA390072BA7E /* Extensions */,
 				8ECC71D72A34AF4D0072BA7E /* HomeScreenView.swift */,
+				8ECC71DD2A34C7000072BA7E /* AppointmentCardView.swift */,
 				8ECC71D92A34B90B0072BA7E /* BottomBarView.swift */,
 				8ECC71DB2A34B9850072BA7E /* BottomBarItemView.swift */,
+				8ECC71DF2A34C9140072BA7E /* AppointmentCardBackgroundView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		8ECC71E12A34CA390072BA7E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8ECC71E22A34CA480072BA7E /* HomeExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,13 +316,19 @@
 				8EC43A232A33CD1D00724548 /* ContentView.swift in Sources */,
 				8EC43A452A33DBC800724548 /* AppImages.swift in Sources */,
 				8ECC71CE2A348F7B0072BA7E /* BorderedCircle.swift in Sources */,
+				8ECC71E72A34D5850072BA7E /* Vetinarian.swift in Sources */,
 				8ECC71D32A349D000072BA7E /* WelcomeScreenView.swift in Sources */,
 				8ECC71DA2A34B90B0072BA7E /* BottomBarView.swift in Sources */,
+				8ECC71E32A34CA480072BA7E /* HomeExtensions.swift in Sources */,
+				8ECC71E52A34D3640072BA7E /* BorderedButton.swift in Sources */,
 				8EC43A3E2A33D5C700724548 /* AppColors.swift in Sources */,
 				8EC4CB1C2A3401B800E0A06F /* BackgroundView.swift in Sources */,
 				8EC43A212A33CD1D00724548 /* PetShopApp.swift in Sources */,
+				8ECC71DE2A34C7000072BA7E /* AppointmentCardView.swift in Sources */,
 				8EC43A3C2A33D5AB00724548 /* FontStyles.swift in Sources */,
 				8EC4CB1E2A34034E00E0A06F /* BacgroundCircleView.swift in Sources */,
+				8ECC71E02A34C9140072BA7E /* AppointmentCardBackgroundView.swift in Sources */,
+				8ECC71E92A34D8200072BA7E /* HomeViewModel.swift in Sources */,
 				8ECC71D82A34AF4D0072BA7E /* HomeScreenView.swift in Sources */,
 				8EC43A422A33D63E00724548 /* ViewExtension.swift in Sources */,
 				8ECC71D02A3493250072BA7E /* WhiteCircleView.swift in Sources */,
