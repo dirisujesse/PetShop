@@ -20,10 +20,8 @@ struct AppointmentCardBackgroundView: View {
     func incrementAnimationFraction() {
         guard animate else {return}
         
-        while (animationFraction < 1) {
-            withAnimation(.spring(response: 2, dampingFraction: 2, blendDuration: 1)) {
-                animationFraction += 0.01
-            }
+        withAnimation(.spring(response: 2, dampingFraction: 2, blendDuration: 1)) {
+            animationFraction = 1
         }
     }
     
