@@ -56,7 +56,7 @@ struct AppointmentCardView: View {
                 .resizable()
         }
         .frame(maxWidth: .infinity)
-        .cardBackground(animate: false)
+        .cardBackground()
         .clipShape(RoundedRectangle(cornerRadius: 14))
     }
 }
