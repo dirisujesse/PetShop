@@ -8,4 +8,5 @@
 <img src="https://res.cloudinary.com/jesse-dirisu/image/upload/v1686440443/IMG_5700.png" width="30%" margin-bottom="4%">
 <img src="https://res.cloudinary.com/jesse-dirisu/image/upload/v1686440583/IMG_5701.png" width="30%" margin-bottom="4%">
 
-<iframe height="58%" src="https://res.cloudinary.com/jesse-dirisu/video/upload/v1686440604/output.mp4" frameborder="0" allowfullscreen></iframe>
+
+###[Video Link](https://res.cloudinary.com/jesse-dirisu/video/upload/v1686440604/output.mp4)
