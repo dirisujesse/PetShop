@@ -35,17 +35,6 @@ class HomeViewModel: ObservableObject {
         }
     }
 
-    var activeTabBinding: Binding<Int> {
-        Binding(
-            get: { [weak self] in
-                self?.activeTab ?? 0
-            },
-            set: { [weak self] in
-                self?.activeTab = $0
-            }
-        )
-    }
-
     func selectService(_ service: AnimalService?) {
         guard service != activeService && service != nil else {
             withAnimation {
