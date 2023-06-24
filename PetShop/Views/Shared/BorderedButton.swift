@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct BorderedButton: View {
     let action: () -> Void
@@ -21,17 +22,20 @@ struct BorderedButton: View {
         self.backgroundColor = backgroundColor
         self.text = text
     }
+    
+    func dispatchAction() {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
+        action()
+    }
 
     var body: some View {
-        Button(action: action) {
+        Button(action: dispatchAction) {
             Text(text)
                 .font(.manropeBold(12))
                 .frame(minHeight: 36)
                 .foregroundColor(textColor)
                 .padding(.horizontal)
-                .background(
-                    backgroundColor
-                )
                 .overlay {
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(borderColor, lineWidth: 4)

@@ -11,7 +11,7 @@ struct ContentView: View {
     @EnvironmentObject var navigationVM: NavigationViewModel
     
     var body: some View {
-        NavigationStack(path: navigationVM.navPathBinding) {
+        NavigationStack(path: $navigationVM.navPath) {
             WelcomeScreenView()
                 .navigationDestination(for: NavigationRoute.self, destination: navigationVM.handleRouting)
         }

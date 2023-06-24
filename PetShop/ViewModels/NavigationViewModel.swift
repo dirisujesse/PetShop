@@ -15,17 +15,6 @@ enum NavigationRoute {
 class NavigationViewModel: ObservableObject {
     @Published var navPath = NavigationPath()
 
-    var navPathBinding: Binding<NavigationPath> {
-        Binding(
-            get: { [weak self] in
-                self?.navPath ?? NavigationPath()
-            },
-            set: { [weak self] in
-                self?.navPath = $0
-            }
-        )
-    }
-
     func push(_ path: NavigationRoute) {
         navPath.append(path)
     }
